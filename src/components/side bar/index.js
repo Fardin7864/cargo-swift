@@ -126,9 +126,9 @@ export default function MiniDrawer() {
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon />  : <> <ChevronLeftIcon />  <Typography variant="h6" noWrap component="div">
+            {theme.direction === 'rtl' ? <ChevronRightIcon />  : <>   <Typography variant="h6" noWrap component="div">
             Cargo Swift
-          </Typography></>}
+          </Typography><ChevronLeftIcon /></>}
           </IconButton>
         </DrawerHeader>
         <Divider />
